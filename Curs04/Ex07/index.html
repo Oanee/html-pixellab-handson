@@ -7,7 +7,7 @@
     name="viewport"
     content="width=device-width, initial-scale=1.0"
   >
-  <title>Document</title>
+  <title>Ex07</title>
 
   <link
     rel="stylesheet"
@@ -16,6 +16,102 @@
 </head>
 
 <body>
+  <p>
+    <a
+      href="/"
+      title="Home"
+    >Home</a> *
+
+    <a
+      href="/"
+      title="Place order"
+    ><b>Place order</a> *
+  </p>
+
+  <!-- inser CODE -->
+
+  <p>
+    <img
+      src="images/mouse.jpg"
+      alt="mouse"
+    >
+
+    <a
+      href="/"
+      title="Sterge"
+    >Sterge</a>
+
+    <a
+      href="/"
+      title="Editeaza"
+    >Editeaza</a>
+  </p>
+
+  <form>
+    <fieldset>
+      <legend>Personakl Information</legend>
+    </fieldset>
+
+    <fieldset>
+      <legend>Address</legend>
+    </fieldset>
+
+    <fieldset>
+      <legend>Card Information</legend>
+      <!-- insert CODE -->
+
+      <label for="card-expiry-month">*Expiry month</label>
+      <select
+        name="card-expiry-month"
+        id="card-expiry-month"
+        required
+      >
+        <option value="january">January</option>
+        <option value="february">February</option>
+        <option value="march">march</option>
+        <option value="april">April</option>
+      </select>
+
+      <label for="card-expiry-year">*Expiry year</label>
+      <select
+        name="card-expiry-year"
+        id="card-expiry-year"
+        required
+      >
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Form Controls</legend>
+
+      <input
+        type="checkbox"
+        name="terms"
+        id="terms"
+        required
+      >
+      <label for="terms">
+        *You are required to agree to the
+        <a
+          href="/"
+          title="terms and conditions"
+        >terms and conditions</a>
+      </label>
+
+
+      <button
+        type="submit"
+        title="PLACE ORDER"
+        id="submit"
+        name="submit"
+      >PLACE ORDER</button>
+    </fieldset>
+  </form>
+
 
 
   <div
