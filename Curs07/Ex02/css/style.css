@@ -1,3 +1,7 @@
+a {
+  color: green;
+}
+
 p i {
   color: red;
 }
@@ -10,7 +14,34 @@ p i {
   text-decoration: none;
 }
 
+.line {
+  color: grey;
+}
+
+b {
+  color: purple;
+}
+
+.odd .line {
+  color: blue;
+}
+
+.odd i {
+  text-decoration: underline;
+}
+
+.even b {
+  text-decoration: underline;
+}
+
 a[href^="http://"]
 {
   color: red;
+}
+
+/* in exercitiu in pdf cere si sublinierea lor subpunctul 11!!!
+ (eu care am stat juma de ora si nu stiam de ce nu vrea) */
+
+a[href$='.com'] {
+  color: black;
 }
