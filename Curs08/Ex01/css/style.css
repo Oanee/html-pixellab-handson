@@ -1,3 +1,12 @@
+h1 {
+  color: red;
+  text-decoration: underline;
+}
+
+p {
+  color: grey;
+}
+
 ol a {
   color: green;
   text-decoration: line-through blue;
@@ -6,6 +15,23 @@ ol a {
 h2 {
   text-shadow: 2px 2px 5px yellow;
   font-weight: normal;
+}
+
+/* de ce imi apare culoarea in patratul de la brown cu rosu ? */
+
+h3 {
+  text-shadow: 0 3px 5px green;
+  text-decoration: underline dotted brown;
+}
+
+ul li {
+  text-decoration: underline;
+  color: purple;
+}
+
+p b {
+  text-decoration: underline;
+  color: yellow;
 }
 
 p i {
