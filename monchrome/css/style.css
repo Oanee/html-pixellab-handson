@@ -357,5 +357,28 @@ a {
   color: inherit;
   text-decoration: none;
 }
-/* add reset */
-/* add custum box-sizing anchors ul li */
+
+.container {
+  max-width: 1270px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* header */
+.header {
+  margin: 0 0;
+}
+
+.header-secondary {
+  display: flex;
+}
+
+.header-secondary img {
+  align-items: center;
+  width: 100%;
+}
+
+.header-secondary .header-top-inner .header-connect a {
+  margin: 30px auto;
+}
+/* header */
