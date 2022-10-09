@@ -350,7 +350,7 @@ table {
 }
 
 body {
-  font-family: sans-serif, 'Playfair Display';
+  font-family: 'Playfair Display', sans-serif;
 }
 
 a {
@@ -376,61 +376,67 @@ a {
 .header-secondary {
   background: url('../images/banners/banner.png') no-repeat center;
   background-size: cover;
-  height: 426px;
+  height: 500px;
 }
 
 .header-secondary .header-top-inner {
   display: flex;
   justify-content: space-around;
-  padding: 50px 50px 426px 50px;
+  padding-top: 50px;
 }
 
-.header-secondary .header-top-inner .header-connect {
+.header-connect {
   color: #e8e8e8;
   display: flex;
   align-items: center;
 }
 
-.header-secondary .header-top-inner .header-connect a i[class*='fa'] {
+.header-connect a i[class*='fa'] {
   padding: 0 10px;
-  font-size: 28px;
+  font-size: 33px;
 }
 
-.header-secondary .header-top-inner .header-connect a:last-child {
+.header-connect a:last-child {
   font-size: 16px;
   padding: 0 5px;
 }
 
-.header-secondary .header-top-inner .header-controls {
+.header-controls {
   display: flex;
   align-items: center;
 }
 
-.header-secondary .header-top-inner .header-controls ul {
+.header-controls ul {
   display: flex;
 }
 
-.header-secondary .header-top-inner .header-controls ul li {
+.header-controls ul li {
   padding: 0 10px;
-  font-size: 28px;
+  font-size: 33px;
   margin-left: 10px;
 }
 
-.header-secondary .header-top-inner .header-controls form {
+.header-controls form {
   display: flex;
   height: 40px;
   border: 1px solid #cccccc;
   background: transparent;
 }
 
-.header-secondary .header-top-inner .header-controls form button {
+.header-controls form button {
   border: 0;
   background: transparent;
   font-size: 30px;
 }
 
-.header-secondary .header-top-inner .header-controls form input {
+.header-controls form input {
   border: 0;
+}
+
+.header-controls form input::placeholder {
+  font-size: 14px;
+  font-family: 'Roboto';
+  font-weight: 500;
 }
 
 .header-primary ul {
@@ -443,7 +449,11 @@ a {
 /* header */
 
 /* main */
-.content .home-catalog-preview header {
+.home-catalog-preview {
+  margin-bottom: 120px;
+}
+
+.home-catalog-preview .title {
   content: '';
   width: 100%;
   height: 1px;
@@ -451,63 +461,75 @@ a {
   display: inline-block;
 }
 
-.content .home-catalog-preview .title h1 {
+.home-catalog-preview .title .title-uppercase {
+  text-transform: uppercase;
+}
+
+.home-catalog-preview .title h1 {
   text-align: center;
-  font-size: 47px;
+  font-size: 35px;
   margin: 25px 0;
 }
 
-.content .home-catalog-preview ul {
+.home-catalog-preview ul {
   display: flex;
   justify-content: space-between;
 }
 
-.content .home-catalog-preview .product-tiles .product-tile {
-  margin: 60px 0;
+.home-catalog-preview ul li {
+  width: 23.672566%;
+}
+
+.home-catalog-preview .product-tiles .product-tile {
+  margin-top: 23px;
   position: relative;
 }
 
-.content .home-catalog-preview .product-tiles .product-tile span {
+.home-catalog-preview .product-tiles .product-tile span {
   position: absolute;
   top: 20px;
   right: 20px;
   font-size: 40px;
 }
 
-.content .home-catalog-preview .product-tiles .footer-product {
+.home-catalog-preview .product-tiles .footer-product {
   text-align: center;
   font-size: 22px;
+  text-transform: uppercase;
 }
 
-.content .home-catalog-preview .product-tiles .product-tile-title {
-  padding: 20px 0 10px 0;
+.home-catalog-preview .product-tiles .footer-product .product-tile-title {
+  margin: 21px 0 10px 0;
 }
 
-.content .home-catalog-preview .catalog-ctas {
+.home-catalog-preview .catalog-ctas {
   text-align: center;
-  font-size: 29px;
-  margin: 30px 0 120px 0;
+  font-size: 22px;
+  margin-top: 70px;
 }
 
-.content .home-catalog-preview:last-child .catalog-ctas a {
+.home-catalog-preview .catalog-ctas a {
   border: 1px solid #2b2b2b;
-  padding: 10px;
+  padding: 10px 18px;
+  font-family: 'Roboto';
+  width: 110px;
 }
 
-.content .home-content {
+.home-content {
   display: flex;
   margin-bottom: 120px;
 }
 
-.content .home-content h1 {
+.home-content h1 {
   text-align: right;
   font-size: 44px;
   padding-bottom: 40px;
   line-height: 33px;
   letter-spacing: 0.66px;
+  margin-top: 20px;
 }
 
-.content .home-content p {
+.home-content p {
   display: flex;
   font-size: 22px;
   padding-bottom: 70px;
@@ -516,75 +538,80 @@ a {
   text-align: left;
   line-height: 43px;
   letter-spacing: 0.33px;
+  color: #2b2b2b;
 }
 /* main */
 
 /* footer */
 .footer {
   background-color: #e8e8e8;
-  height: 330px;
+  padding: 35px 0;
+  font-size: 22px;
+  color: #2b2b2b;
   line-height: 37px;
 }
 
-.footer .footer-inner {
+.footer-inner {
   display: flex;
-  padding-top: 40px;
-  font-size: 22px;
   justify-content: space-between;
 }
 
-.footer .footer-inner .footer-contact {
+.footer-nav ul {
   display: inline-block;
-  vertical-align: top;
-  margin-right: 150px;
+  margin: 0 80px;
 }
 
-.footer .footer-inner .footer-contact a {
+.footer-connect form h1 {
+  margin: 0;
+}
+
+.footer-connect form input:first-of-type {
   display: block;
-}
-
-.footer .footer-inner .footer-nav {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 150px;
-}
-
-.footer .footer-inner .footer-nav ul {
-  display: flex;
-  justify-content: space-around;
-}
-
-.footer .footer-inner .footer-contact-right {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.footer .footer-inner .footer-contact-right form {
-  display: block;
-}
-
-.footer .footer-inner .footer-contact-right form > input {
   width: 360px;
   height: 34px;
+  background-color: #ffffff;
+  margin: 14px 0;
+  border: none;
 }
 
-.footer .footer-inner .footer-contact-right form label span {
+.footer-connect form input:first-of-type::placeholder {
+  font-style: italic;
+  padding-left: 20px;
+  display: inline-block;
+  color: #a59999;
+}
+
+.footer-connect form input[type='checkbox'] {
+  vertical-align: top;
+}
+
+.footer-connect form label {
+  display: inline-block;
+  text-align: left;
+  width: 333px;
+  font-size: 16px;
+  line-height: 21px;
+  font-family: 'Roboto';
+}
+
+.footer-connect form label span {
   text-decoration: underline;
 }
 
-.footer .footer-inner .footer-contact-right form button {
+.footer-connect form button {
   height: 30px;
-  border-color: #3c3c3c;
+  width: 90px;
+  border-color: #2b2b2b;
   text-transform: uppercase;
   display: block;
+  margin: 10px 0;
 }
 
-.footer .footer-inner .footer-social ul li {
+.footer-social ul li {
   display: inline-block;
-}
-
-.footer .footer-inner .footer-social ul li a {
   font-size: 30px;
   color: #3c3c3c;
+  margin-right: 10px;
+  font-size: 28px;
 }
 /* footer */
